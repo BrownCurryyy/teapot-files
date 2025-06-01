@@ -123,7 +123,8 @@ nav a:hover {
 }
 
 .char-img img:hover {
-  transform: scale(1.05);
+  transform: scale(1.09);
+  filter: drop-shadow(0 0 8px #f948b0);
 }
 
 .char-name {
