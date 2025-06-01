@@ -1,0 +1,29 @@
+body {
+  background: #0f0f0f;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 2rem 1rem;       /* add some padding for spacing */
+  display: flex;
+  flex-direction: column;  /* stack children vertically */
+  align-items: center;     /* center horizontally */
+  min-height: 100vh;       /* full viewport height */
+  box-sizing: border-box;
+}
+
+/* rest unchanged */
+.h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 9px #53dbb0;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  font-style: italic;
+  text-shadow: 0 0 5px #999;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
