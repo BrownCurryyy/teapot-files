@@ -277,7 +277,31 @@
   </div>
 </div>
 </section>
-<div class="teapot-tag">#PamCult 🌸</div>
+<button class="teapot-tag" onclick="burstFlower()">#PamCult 🌸</button>
+  <div class="flower-container" id="flowerContainer"></div>
+
+  <script>
+function burstFlower() {
+  const container = document.getElementById('flowerContainer');
+  const flower = document.createElement('div');
+  flower.classList.add('flower');
+  flower.textContent = '🌸';
+
+  // Random offset for chaotic beauty
+  const offsetX = Math.random() * 40 - 10;
+  const offsetY = Math.random() * 2;
+
+  flower.style.right = `${offsetX}px`;
+  flower.style.bottom = `${offsetY}px`;
+
+  container.appendChild(flower);
+
+  // Clean up after animation
+  setTimeout(() => {
+    container.removeChild(flower);
+  }, 1000);
+}
+</script>
 
     </body>
     </html>
