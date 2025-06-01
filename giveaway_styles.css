@@ -48,3 +48,48 @@ body {
   transform: rotate(5deg) scale(1.1);
   filter: drop-shadow(0 0 8px #00ffff);
 }
+/* Floating hashtag */
+  .teapot-tag {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #53dbb0;
+    color: #000;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    box-shadow: 0 0 10px #53dbb0;
+    animation: floaty 3s ease-in-out infinite;
+    z-index: 998;
+  }
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(3px); }
+  50% { transform: translateY(-25px); }
+}
+.flower-container {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.flower {
+  position: absolute;
+  font-size: 1.2rem;
+  animation: flowerPop 1s ease-out forwards;
+  opacity: 2;
+}
+
+@keyframes flowerPop {
+  0% {
+    transform: scale(0.7) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2) translateY(-60px);
+    opacity: 0;
+  }
+}
