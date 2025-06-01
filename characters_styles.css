@@ -161,3 +161,28 @@ nav a:hover {
   0%, 100% { transform: translateY(3px); }
   50% { transform: translateY(-25px); }
 }
+.flower-container {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.flower {
+  position: absolute;
+  font-size: 1.2rem;
+  animation: flowerPop 1s ease-out forwards;
+  opacity: 2;
+}
+
+@keyframes flowerPop {
+  0% {
+    transform: scale(0.7) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2) translateY(-60px);
+    opacity: 0;
+  }
+}
